@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="PazMind: recursos para manejar el estres desde la universidad hasta el trabajo.">
+  <title>PazMind | Encuentra tu equilibrio</title>
+  <link rel="icon" type="image/png" href="assets/images/pazmindlogo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="page-loader" aria-hidden="true"><span>PazMind</span></div>
+
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="PazMind inicio">
+      <span class="brand-mark"><img src="assets/images/pazmindlogo.png" alt="PazMind"></span>
+    </a>
+    <nav aria-label="Navegacion principal">
+      <a href="index.html">Inicio</a>
+      <a href="pages/etapas.html">Por etapas</a>
+      <a href="pages/herramientas.html">Herramientas</a>
+      <a href="pages/ayuda.html">Ayuda</a>
+    </nav>
+    <a class="header-cta" href="pages/herramientas.html">Respirar ahora</a>
+    <button class="menu-button" type="button" aria-label="Abrir menu" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span></span> Bienestar para cada etapa</p>
+        <h1>Respira. <em>Reconecta.</em><br>Avanza con calma.</h1>
+        <p class="hero-intro">Herramientas simples y humanas para manejar el estres, desde los desafios universitarios hasta la vida laboral.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="pages/etapas.html">Explorar recursos <span aria-hidden="true">→</span></a>
+          <button class="button button-soft breathe-trigger" type="button"><span class="play-icon">▶</span> Ejercicio de respiracion</button>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal">
+        <div class="leaf leaf-one"></div>
+        <div class="leaf leaf-two"></div>
+        <div class="slider" aria-label="Momentos de calma">
+          <div class="slide active" style="--slide-image: url('assets/images/universidad.svg')">
+            <div class="slide-overlay"><span>Universidad</span><strong>Encuentra tu ritmo</strong></div>
+          </div>
+          <div class="slide" style="--slide-image: url('assets/images/trabajo.svg')">
+            <div class="slide-overlay"><span>Trabajo</span><strong>Recupera tu energia</strong></div>
+          </div>
+          <div class="slide" style="--slide-image: url('assets/images/calma.svg')">
+            <div class="slide-overlay"><span>Bienestar</span><strong>Vuelve a ti</strong></div>
+          </div>
+        </div>
+        <div class="slider-controls">
+          <button class="slider-arrow prev" type="button" aria-label="Imagen anterior">←</button>
+          <div class="slider-dots" aria-label="Seleccionar imagen"></div>
+          <button class="slider-arrow next" type="button" aria-label="Imagen siguiente">→</button>
+        </div>
+        <div class="floating-card">
+          <span class="pulse-dot"></span>
+          <div><strong>Hoy es un buen dia</strong><small>Un minuto para ti</small></div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <a class="brand" href="#inicio"><span class="brand-mark"><img src="assets/images/pazmindlogo.png" alt="PazMind"></span></a>
+    <p>Pequenos pasos. Cambios reales.</p>
+    <p>© 2026 PazMind</p>
+  </footer>
+
+  <dialog class="breathing-modal" id="breathingModal">
+    <button class="modal-close" type="button" aria-label="Cerrar">×</button>
+    <p class="eyebrow centered"><span></span> Respiracion guiada <span></span></p>
+    <h2>Un minuto contigo</h2>
+    <div class="modal-breath"><span id="breathLabel">Inhala</span></div>
+    <p id="breathCount">4 segundos</p>
+    <button class="button button-primary modal-action" type="button">Comenzar</button>
+  </dialog>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

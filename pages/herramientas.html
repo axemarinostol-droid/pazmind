@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Herramientas | PazMind</title>
+  <link rel="icon" type="image/png" href="../assets/images/pazmindlogo.png">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body class="inner-page">
+  <div class="page-loader" aria-hidden="true"><span>PazMind</span></div>
+  <header class="site-header">
+    <a class="brand" href="../index.html"><span class="brand-mark"><img src="../assets/images/pazmindlogo.png" alt="PazMind"></span></a>
+    <nav><a href="../index.html">Inicio</a><a href="etapas.html">Por etapas</a><a class="active" href="herramientas.html">Herramientas</a><a href="ayuda.html">Ayuda</a></nav>
+    <a class="header-cta" href="herramientas.html">Respirar ahora</a>
+    <button class="menu-button" type="button" aria-label="Abrir menu"><span></span><span></span></button>
+  </header>
+  <main>
+    <section class="inner-hero compact"><div class="inner-hero-copy reveal"><p class="eyebrow"><span></span> Herramientas practicas</p><h1>Calma <em>en movimiento.</em></h1><p>Tecnicas breves para recuperar claridad, presencia y energia durante el dia.</p></div></section>
+    <section class="tools section" style="padding-top:70px">
+      <div class="tools-visual reveal"><div class="breathing-circle"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="breath-core"><span>Inhala</span><strong>4</strong></div></div><p>Si lo necesitas, haz una pausa.<br>Tu mente tambien descansa.</p></div>
+      <div class="tools-content reveal"><p class="eyebrow"><span></span> Elige una pausa</p><div class="tool-list">
+        <button class="tool-item breathe-trigger" type="button"><span>01</span><div><strong>Respiracion consciente</strong><small>1 minuto</small></div><b>→</b></button>
+        <button class="tool-item" type="button" data-tool="ground"><span>02</span><div><strong>Anclaje 5-4-3-2-1</strong><small>3 minutos</small></div><b>→</b></button>
+        <button class="tool-item" type="button" data-tool="journal"><span>03</span><div><strong>Reset mental</strong><small>5 minutos</small></div><b>→</b></button>
+      </div></div>
+    </section>
+  </main>
+  <dialog class="breathing-modal" id="breathingModal">
+    <button class="modal-close" type="button" aria-label="Cerrar">×</button><p class="eyebrow centered"><span></span> Respiracion guiada <span></span></p><h2>Un minuto contigo</h2><div class="modal-breath"><span id="breathLabel">Inhala</span></div><p id="breathCount">4 segundos</p><button class="button button-primary modal-action" type="button">Comenzar</button>
+  </dialog>
+  <footer><a class="brand" href="../index.html"><span class="brand-mark"><img src="../assets/images/pazmindlogo.png" alt="PazMind"></span></a><p>Pequenos pasos. Cambios reales.</p><p>© 2026 PazMind</p></footer>
+  <script src="../js/main.js"></script>
+</body>
+</html>
